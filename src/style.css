@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  left: 0;
+  right: 0;
+}
+
+body {
+  background: rgb(199, 187, 187);
+}
+
+.toDo {
+  margin: 10% 23.6% 15% 23%;
+  background: white;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2%;
+  border-bottom: 1px solid grey;
+}
+
+.form {
+  padding: 2% 2% 0 2%;
+  border-bottom: 1px solid grey;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* input {
+  width: 80%;
+  border: none;
+} */
+
+.addtext {
+  width: inherit;
+  border: none;
+  font-size: 1.4rem;
+}
+
+.last {
+  padding: 2%;
+}
+
+.activities {
+  padding: 0;
+}
+
+.activities li {
+  list-style-type: none;
+  border-bottom: 1px solid grey;
+}
+
+.activities li div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.activities li div input {
+  margin-left: 0;
+  margin-right: 2%;
+}
+
+.activities li div h3 {
+  width: 50%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.activities li div i {
+  margin-left: 44%;
+}
+
+footer {
+  text-align: center;
+}
+
+button {
+  width: 100%;
+  padding: 2.4%;
+  font-size: 1.5rem;
+}
+
+.hello {
+  display: none;
+}
