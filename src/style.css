@@ -5,11 +5,12 @@
 }
 
 body {
-  background: rgb(199, 187, 187);
+  background: rgb(240, 230, 230);
 }
 
 .toDo {
-  margin: 10% 23.6% 15% 23%;
+  margin: 5% 23.6%;
+  width: 60%;
   background: white;
 }
 
@@ -22,72 +23,90 @@ body {
 }
 
 .form {
-  padding: 2% 2% 0 2%;
-  border-bottom: 1px solid grey;
-}
-
-form {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
+  flex-wrap: wrap;
+  border-bottom: 1px solid grey;
+  border-bottom: 1px solid rgb(182, 175, 175);
 }
 
-/* input {
-  width: 80%;
-  border: none;
-} */
+.form1 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-top: 1px solid rgb(182, 175, 175);
+}
 
 .addtext {
-  width: inherit;
   border: none;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
+  outline: none;
+  font-style: italic;
+  padding: 3%;
 }
 
 .last {
   padding: 2%;
 }
 
-.activities {
-  padding: 0;
-}
-
-.activities li {
-  list-style-type: none;
-  border-bottom: 1px solid grey;
-}
-
-.activities li div {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.activities li div input {
-  margin-left: 0;
-  margin-right: 2%;
-}
-
-.activities li div h3 {
-  width: 50%;
-  padding-top: 2%;
-  padding-bottom: 2%;
-}
-
-.activities li div i {
-  margin-left: 44%;
-}
-
-footer {
-  text-align: center;
-}
-
 button {
   width: 100%;
-  padding: 2.4%;
-  font-size: 1.5rem;
+  padding: 3%;
+  font-size: 1.2rem;
+}
+
+.todo-container {
+  border-top: 1px solid rgb(182, 175, 175);
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 .hello {
   display: none;
+}
+
+.todocontainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2%;
+  flex: 1;
+  border-bottom: 1px solid rgb(182, 175, 175);
+}
+
+span {
+  display: flex;
+  flex: 3;
+  margin-left: 5%;
+}
+
+.delete {
+  display: none;
+  margin-left: 12%;
+}
+
+.delete:hover {
+  cursor: pointer;
+}
+
+.trash {
+  display: flex;
+  align-self: flex-end;
+}
+
+.checkedcontainer {
+  background: #fffed3;
+}
+
+.edit-disable {
+  display: none;
+}
+
+.inputvalue {
+  text-decoration: line-through;
+}
+
+img {
+  width: 20px;
 }
