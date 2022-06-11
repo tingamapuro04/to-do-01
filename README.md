@@ -53,10 +53,6 @@ Here is a link where you can add any isssue bout the code [issues page] (https:/
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
-
-- This project design was inspired by a design from Cindy Shin in Behance.
-- Original design idea by[Cindy Shin] (https://www.behance.net/adagio07) in Behance
 
 ## 📝 License
 

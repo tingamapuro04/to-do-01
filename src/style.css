@@ -51,7 +51,7 @@ body {
 button {
   width: 100%;
   padding: 3%;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
 }
 
 .todo-container {
@@ -73,6 +73,7 @@ button:hover {
   padding: 2%;
   flex: 1;
   border-bottom: 1px solid rgb(182, 175, 175);
+  font-size: 1.3rem;
 }
 
 span {
