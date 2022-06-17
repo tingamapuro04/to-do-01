@@ -4,10 +4,14 @@
   "description": "",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest --watch",
     "start": "webpack serve --open",
     "build": "webpack",
     "deploy": "gh-pages -d dist"
+  },
+  "jest": {
+    "resetMocks": false,
+    "setupFiles": ["jest-localstorage-mock"]
   },
   "keywords": [],
   "author": "",
@@ -19,6 +23,9 @@
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.26.0",
     "html-webpack-plugin": "^5.5.0",
+    "jest": "^28.1.1",
+    "jest-environment-jsdom": "^28.1.1",
+    "jest-localstorage-mock": "^2.4.21",
     "style-loader": "^3.3.1",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
