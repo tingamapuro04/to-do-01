@@ -5,10 +5,9 @@ const updateLocal = require('./update');
 const removetodo = require('./remove');
 const edittodo = require('./edit');
 
-const todoCon = document.querySelector('.todo-container');
-const Array1 = [];
-
 const addToList = (todovalue) => {
+  const todoCon = document.querySelector('.todo-container');
+  const Array1 = [];
   const todocontainer = document.createElement('div');
   todocontainer.className = 'todocontainer';
   todocontainer.innerHTML += `

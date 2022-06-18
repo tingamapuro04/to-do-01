@@ -1,5 +1,6 @@
-const todoCon = document.querySelector('.todo-container');
+
 const removetodo = (todo) => {
+  const todoCon = document.querySelector('.todo-container');
   todoCon.removeChild(todo);
   let count = 0;
   const localData = JSON.parse(localStorage.getItem('activities'));

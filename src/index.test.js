@@ -4,7 +4,8 @@
 
 const addToList = require('./modules/add');
 const myObject = require('./modules/function');
-
+const removetodo = require('./modules/remove');
+const updateLocal = require('./modules/update');
 
 describe('Test', () => {
   document.body.innerHTML = `<div class="toDo">
@@ -21,10 +22,18 @@ describe('Test', () => {
         </div>
     </div>`;
   const task = 'eat';
-  const todo = new myObject(task, false, 1);
+  const todo = new myObject(task);
+  const todo1 = new myObject('mobutu');
   test('Add an activity', () => {
     addToList(todo);
-    const LocalData = JSON.parse(localStorage.getItem('Activities'));
-    expect(LocalData.length).toEqual(1);
-  })
-})
+    const LocalData = JSON.parse(localStorage.getItem('activities'));
+    expect(LocalData.length).toBe(1);
+  });
+
+  test('Remove an item', () => {
+    addToList(todo);
+    addToList(todo1);
+    const localData = JSON.parse(localStorage.getItem('activities'));
+    expect(localData).toBe('mobutu');
+  });
+});
